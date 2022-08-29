@@ -1,12 +1,28 @@
 .clients-list {
-  @include flex(center);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+  @include desktop {
+    @include flex(center);
+    // flex-wrap: nowrap;
+  }
 }
 .clients-item {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
   @include flex(center);
+  min-width: calc((100% - 30px) / 2);
+  height: 92px;
+  padding: 16px 51px;
+
+  @include tablet {
+    min-width: calc((100% - 60px) / 3);
+    padding: 16px 59px;
+  }
+
+  @include desktop {
+    min-width: calc((100% - 150px) / 6);
+    padding: 16px 31px;
+  }
 
   border: 1px solid $color-icon;
   border-radius: 4px;

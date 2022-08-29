@@ -4,8 +4,10 @@
   background-color: $accent-bg-color;
 
   &-wrap {
-    display: flex;
-    align-items: baseline;
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 .logo--footer {
