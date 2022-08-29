@@ -757,14 +757,14 @@ img {
   }
 }
 
-.logo--footer {
+.logo--dark {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
   color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo--footer:focus {
+.logo--dark:focus {
   color: #2196f3;
   outline: none;
 }
@@ -818,11 +818,11 @@ img {
   color: #fff;
 }
 
-.social-link--footer {
+.social-link--dark {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-icon--footer {
+.social-icon--dark {
   fill: #fff;
 }
 
