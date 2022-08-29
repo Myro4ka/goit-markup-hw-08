@@ -1,0 +1,35 @@
+.features {
+  padding-bottom: 47px;
+}
+.features-list {
+  display: flex;
+}
+.features-item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__icon {
+    width: 270px;
+    height: 120px;
+    padding: 0;
+    margin: 0 0 30px;
+    @include flex(center);
+    background-color: $second-bg-color;
+    border-radius: 4px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $second-text-color;
+    line-height: 1.71;
+  }
+}

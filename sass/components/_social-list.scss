@@ -1,0 +1,30 @@
+.social-list {
+  @include flex(center);
+  gap: 10px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  @include flex(center);
+
+  background-color: $primary-white-color;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $color-icon;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: $accent-color;
+  outline: none;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: $primary-white-color;
+}
