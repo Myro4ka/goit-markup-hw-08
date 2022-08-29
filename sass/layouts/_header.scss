@@ -2,16 +2,33 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .header-wrap {
-  @include flex(none);
+  @include flex(space-between);
+
+  @include tablet {
+    @include flex(start);
+  }
 }
 .navigation {
-  @include flex(none);
+  @include flex(space-between);
 }
 .navigation-list {
-  @include flex(none);
-  margin-left: 93px;
+  display: none;
+
+  @include tablet {
+    @include flex(space-between);
+    margin-left: 87px;
+  }
+  @include desktop {
+    margin-left: 93px;
+  }
 }
 .navigation-item:not(:last-child) {
   margin-right: 50px;
@@ -44,35 +61,86 @@
   }
 }
 .header-contacts {
-  @include flex(none);
-  margin-left: auto;
-  gap: 30px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+  @include desktop {
+    @include flex(start);
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .header-mail,
 .header-tel {
   padding: 0;
-  @include flex(none);
+  @include flex(start);
 
   color: $second-text-color;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;
     outline: none;
   }
+  @include desktop {
+    font-size: 14px;
+  }
 }
 
-.mail-icon,
-.tel-icon {
-  margin-right: 10px;
+.mail-icon {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
 
   fill: $second-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .header-mail:hover &,
-  .header-mail:focus &,
+  .header-mail:focus & {
+    fill: $accent-color;
+  }
+  @include desktop {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+}
+.tel-icon {
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+
+  fill: $second-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .header-tel:hover &,
   .header-tel:focus & {
     fill: $accent-color;
+  }
+  @include desktop {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.open-btn {
+  @include flex(center);
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  &-icon {
+    fill: #000000;
+  }
+  @include tablet {
+    display: none;
   }
 }

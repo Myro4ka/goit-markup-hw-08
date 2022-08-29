@@ -8,27 +8,3 @@ $color-icon: #afb1b8;
 
 $primary-font: Roboto, sans-serif;
 $logo-font: Raleway, sans-serif;
-
-@mixin flex($justify-content) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin mobile {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1200px) {
-    @content;
-  }
-}
