@@ -15,19 +15,23 @@
   @include retina {
     background-image: $hero-bg-gradient, url(../../images/bghero-mob2x.jpg);
   }
+
   @include tablet {
     background-image: $hero-bg-gradient, url(../../images/bghero-tab.jpg);
     @include retina {
       background-image: $hero-bg-gradient, url(../../images/bghero-tab2x.jpg);
     }
-    @include desktop {
-      background-image: $hero-bg-gradient, url(../images/bghero.jpg);
-      @include retina {
-        background-image: $hero-bg-gradient, url(../../images/bghero2x.jpg);
-      }
-    }
   }
 
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    background-image: $hero-bg-gradient, url(../images/bghero.jpg);
+    @include retina {
+      background-image: $hero-bg-gradient, url(../../images/bghero2x.jpg);
+    }
+  }
   &-title {
     margin: 0 auto 30px;
     max-width: 360px;
@@ -44,11 +48,5 @@
       font-size: 44px;
       line-height: 1.36;
     }
-  }
-
-  @include desktop {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
   }
 }
