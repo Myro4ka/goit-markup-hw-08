@@ -570,19 +570,16 @@ img {
     display: none;
   }
 }
-
 .mob-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .mob-menu__list {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
 .mob-menu__item {
   color: #212121;
   font-weight: 500;
@@ -592,7 +589,6 @@ img {
 .mob-menu__item.current {
   color: #2196f3;
 }
-
 .mob-menu__contacts {
   display: flex;
   flex-direction: column;
@@ -601,12 +597,10 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-
 .mob-menu__tel {
   font-size: 34px;
   color: #2196f3;
 }
-
 .mob-menu__mail {
   font-size: 24px;
   color: #757575;
@@ -812,7 +806,7 @@ img {
     width: calc((100% - 90px) / 4);
   }
 }
-.team-card > img {
+.team-card img {
   width: 100%;
   margin-bottom: 30px;
 }
