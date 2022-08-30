@@ -76,11 +76,11 @@
       right: 10px;
     }
   }
-}
-.mob-menu__social-link {
-  color: $accent-color;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  &-link {
+    color: $accent-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
