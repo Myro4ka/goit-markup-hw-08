@@ -55,7 +55,7 @@
             </a>
           </li>
         </ul>
-        <button class="open-btn" type="button">
+        <button class="open-btn" type="button" data-menu-button>
           <svg class="open-btn-icon" width="40" height="40">
             <use href="./images/icons.svg#menu-open-btn"></use>
           </svg>
@@ -460,7 +460,7 @@
     </footer>
 
     <!-- Модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
           <svg class="close-btn__icon">
@@ -524,7 +524,51 @@
           <button type="submit" class="main-button form-btn">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+
+    <!-- Мобільне меню -->
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="container">
+        <button class="close-button close-button--bigger" data-menu-close>
+          <svg class="close-btn__icon">
+            <use href="./images/icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <nav class="modal-menu__nav">
+          <ul class="mob-menu__list">
+            <li>
+              <a href="./index.html" class="current mob-menu__item">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mob-menu__item">Портфоліо</a>
+            </li>
+            <li><a href="#" class="mob-menu__item">Контакти</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="mob-menu__contacts">
+            <li>
+              <a href="tel:+380961111111" class="mob-menu__tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-menu__mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-menu__social">
+            <li><a href="#" class="mob-menu__social-link">Instagram</a></li>
+            <li><a href="#" class="mob-menu__social-link">Twitter</a></li>
+            <li><a href="#" class="mob-menu__social-link">Facebook</a></li>
+            <li><a href="#" class="mob-menu__social-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

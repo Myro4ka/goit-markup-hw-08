@@ -6,7 +6,7 @@
 
   @include desktop {
     @include flex(center);
-    // flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
 .clients-item {
