@@ -616,17 +616,22 @@ img {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.mob-menu__social li {
+  position: relative;
+  padding-right: 21px;
 }
 .mob-menu__social li:not(:last-child)::after {
+  position: absolute;
   content: "";
-  display: inline-block;
+  display: block;
   width: 2px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
-  position: relative;
-  top: 5px;
-  left: 10px;
+  top: 0;
+  right: 10px;
 }
 
 .mob-menu__social-link {
