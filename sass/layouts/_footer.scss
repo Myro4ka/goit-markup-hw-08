@@ -4,9 +4,26 @@
   background-color: $accent-bg-color;
 
   &-wrap {
-    @include desktop {
-      display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @include tablet {
+      // display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    @include desktop {
+      // display: flex;
+      // flex-direction: row;
+      // align-items: baseline;
+      // gap: 0;
+      flex-wrap: nowrap;
     }
   }
 }
@@ -21,13 +38,34 @@
     outline: none;
   }
 }
+
+.footer-wrap-box {
+  text-align: center;
+
+  @include tablet {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    text-align: start;
+    margin: 0 70px 0 0;
+  }
+}
 .footer-address {
-  width: 231px;
-  margin: 0 70px 0 0;
+  width: 232px;
   font-style: normal;
+
+  @include desktop {
+    width: 231px;
+    // margin: 0 70px 0 0;
+  }
 }
 .contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 .location {
   color: $primary-white-color;
@@ -50,8 +88,13 @@
 }
 .footer__social-box {
   width: 206px;
-  padding: 0;
-  margin: 0 93px 0 0;
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+    padding: 0;
+    margin: 0 93px 0 0;
+  }
 }
 .footer-title {
   margin-top: 0;
@@ -69,16 +112,36 @@
 }
 .subscription-box {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 .sub-form {
   display: flex;
+  align-items: center;
   flex-direction: column;
 
+  @include desktop {
+    align-items: flex-start;
+  }
+
   &__input {
-    margin: 0 12px 0 0;
+    margin: 0;
     padding: 15px 16px;
-    width: 358px;
+    width: 450px;
     height: 50px;
+
+    @include desktop {
+      // margin: 0 12px 0 0;
+      width: 358px;
+    }
 
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
@@ -95,7 +158,7 @@
   }
 }
 .sub-btn {
-  align-self: flex-end;
+  text-align: center;
   width: 200px;
   height: 50px;
   @include flex(space-between);
@@ -105,5 +168,8 @@
     width: 24px;
     height: 24px;
     fill: $primary-white-color;
+  }
+  @include desktop {
+    align-self: flex-end;
   }
 }

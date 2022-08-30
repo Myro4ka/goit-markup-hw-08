@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+
   @include desktop {
     @include flex(center);
     // flex-wrap: nowrap;
