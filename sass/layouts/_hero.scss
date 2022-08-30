@@ -8,14 +8,25 @@
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bghero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: $hero-bg-gradient, url(../../images/bghero-mob.jpg);
+  @include retina {
+    background-image: $hero-bg-gradient, url(../../images/bghero-mob2x.jpg);
+  }
+  @include tablet {
+    background-image: $hero-bg-gradient, url(../../images/bghero-tab.jpg);
+    @include retina {
+      background-image: $hero-bg-gradient, url(../../images/bghero-tab2x.jpg);
+    }
+    @include desktop {
+      background-image: $hero-bg-gradient, url(../images/bghero.jpg);
+      @include retina {
+        background-image: $hero-bg-gradient, url(../../images/bghero2x.jpg);
+      }
+    }
+  }
 
   &-title {
     margin: 0 auto 30px;

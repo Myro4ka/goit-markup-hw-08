@@ -138,6 +138,7 @@
           <ul class="services-list">
             <li class="services-item">
               <img
+                srcset="./images/service1.jpg 1x, ./images/service1-2x.jpg 2x"
                 src="./images/service1.jpg"
                 alt="Написання коду"
                 width="370"
@@ -147,6 +148,7 @@
             </li>
             <li class="services-item">
               <img
+                srcset="./images/service2.jpg 1x, ./images/service2-2x.jpg 2x"
                 src="./images/service2.jpg"
                 alt="Адаптування контенту для мобільних телефонів"
                 width="370"
@@ -156,6 +158,7 @@
             </li>
             <li class="services-item">
               <img
+                srcset="./images/service3.jpg 1x, ./images/service3-2x.jpg 2x"
                 src="./images/service3.jpg"
                 alt="Індивідуальний підбір оформлення"
                 width="370"
@@ -173,6 +176,26 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
+              <picture>
+                <source
+                  srcset="./images/proddes.jpg 1x, ./images/proddes2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/proddes-tab.jpg   1x,
+                    ./images/proddes-tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/proddes-mob.jpg   1x,
+                    ./images/proddes-mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              </picture>
               <img src="./images/proddes.jpg" alt="Фото Ігоря Дем'яненка" />
               <h3 class="team-card__member">Ігор Дем'яненко</h3>
               <p lang="en" class="team-card__desc">Product Designer</p>
@@ -209,6 +232,26 @@
               </ul>
             </li>
             <li class="team-card">
+              <picture>
+                <source
+                  srcset="./images/frontdev.jpg 1x, ./images/frontdev2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontdev-tab.jpg   1x,
+                    ./images/frontdev-tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontdev-mob.jpg   1x,
+                    ./images/frontdev-mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              </picture>
               <img src="./images/frontdev.jpg" alt="Фото Ольги Рєпіної" />
               <h3 class="team-card__member">Ольга Рєпіна</h3>
               <p lang="en" class="team-card__desc">Frontend Developer</p>
@@ -244,6 +287,29 @@
               </ul>
             </li>
             <li class="team-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing.jpg   1x,
+                    ./images/marketing2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-tab.jpg   1x,
+                    ./images/marketing-tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-mob.jpg   1x,
+                    ./images/marketing-mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              </picture>
               <img src="./images/marketing.jpg" alt="Фото Миколи Тарасова" />
               <h3 class="team-card__member">Микола Тарасов</h3>
               <p lang="en" class="team-card__desc">Marketing</p>
@@ -279,6 +345,26 @@
               </ul>
             </li>
             <li class="team-card">
+              <picture>
+                <source
+                  srcset="./images/uides.jpg 1x, ./images/uides2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/uides-tab.jpg   1x,
+                    ./images/uides-tab2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/uides-mob.jpg   1x,
+                    ./images/uides-mob2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+              </picture>
               <img src="./images/uides.jpg" alt="Фото Михайла Єрмакова" />
               <h3 class="team-card__member">Михайло Єрмаков</h3>
               <p lang="en" class="team-card__desc">UI Designer</p>
