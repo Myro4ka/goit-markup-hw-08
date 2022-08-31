@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 100%;
-  max-width: 480px;
+  width: 480px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -10,10 +10,10 @@
   //   outline: 2px solid rgb(4, 238, 43);
 
   @include tablet {
-    min-width: 768px;
+    width: 768px;
   }
 
   @include desktop {
-    min-width: 1200px;
+    width: 1200px;
   }
 }

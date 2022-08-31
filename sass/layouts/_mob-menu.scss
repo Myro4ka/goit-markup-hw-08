@@ -46,6 +46,9 @@
     letter-spacing: 0.02em;
   }
   &__tel {
+    @include mobile {
+      font-size: 26px;
+    }
     font-size: 34px;
     color: $accent-color;
   }
