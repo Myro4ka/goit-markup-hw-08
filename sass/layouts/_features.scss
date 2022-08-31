@@ -29,10 +29,15 @@
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
 
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @include tablet {
+      text-align: start;
+    }
   }
   &__text {
     margin-top: 0;

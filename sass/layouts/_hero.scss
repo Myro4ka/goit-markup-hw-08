@@ -11,15 +11,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: $hero-bg-gradient, url(../../images/bghero-mob.jpg);
+  background-image: $hero-bg-gradient, url(../images/bghero-mob.jpg);
   @include retina {
-    background-image: $hero-bg-gradient, url(../../images/bghero-mob2x.jpg);
+    background-image: $hero-bg-gradient, url(../images/bghero-mob2x.jpg);
   }
 
   @include tablet {
-    background-image: $hero-bg-gradient, url(../../images/bghero-tab.jpg);
+    background-image: $hero-bg-gradient, url(../images/bghero-tab.jpg);
     @include retina {
-      background-image: $hero-bg-gradient, url(../../images/bghero-tab2x.jpg);
+      background-image: $hero-bg-gradient, url(../images/bghero-tab2x.jpg);
     }
   }
 
@@ -29,7 +29,7 @@
     height: 600px;
     background-image: $hero-bg-gradient, url(../images/bghero.jpg);
     @include retina {
-      background-image: $hero-bg-gradient, url(../../images/bghero2x.jpg);
+      background-image: $hero-bg-gradient, url(../images/bghero2x.jpg);
     }
   }
   &-title {
